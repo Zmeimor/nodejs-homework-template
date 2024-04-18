@@ -9,9 +9,9 @@ async function main() {
     await mongoose.connect(process.env.DB_HOST);
     console.log("connected to db");
 
-    app.listen(3001, () => {
+    app.listen(3000, () => {
       console.log(
-        "Database connection successful. Server is listening on port 3001"
+        "Database connection successful. Server is listening on port 3000"
       );
     });
   } catch (error) {
